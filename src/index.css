@@ -11,3 +11,79 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+main {
+  padding: 36px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: linear-gradient(90deg, #1048c0 1.18%, #e05f08 100%);
+  color: white;
+  padding: 20px;
+}
+
+.header--logo {
+  height: 100%;
+  margin-right: 6px;
+}
+
+header h2 {
+  font-size: 30px;
+  margin-right: auto;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+}
+.form--button {
+  grid-column: 1/-1;
+  border-radius: 5px;
+  border: 1px solid #1048c0;
+  background: linear-gradient(90deg, #1048c0 1.18%, #e05f08 100%);
+  color: white;
+  cursor: pointer;
+}
+
+.form--input {
+  border-radius: 5px;
+  border: 1px solid #1048c0;
+  text-indent: 5px;
+}
+.meme {
+  position: relative;
+  padding: 0.3rem;
+}
+.meme--image {
+  max-width: 100%;
+  border-radius: 3px;
+  align-self: center;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+.bottom {
+  bottom: 0;
+}
+.top {
+  top: 0;
+}
